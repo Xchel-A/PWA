@@ -1,5 +1,4 @@
-console.log("¡Hola, Node.js!");
-
+//10 PRODUCTOS ALEATORIOS FAKESTORE API
 function obtenerProductosAleatorios() {
     fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
@@ -27,6 +26,6 @@ function obtenerProductosAleatorios() {
   // Llama a la función inicialmente
   obtenerProductosAleatorios();
   
-  // Configura la ejecución periódica cada 30 segundos
+  // Configura la ejecución periódica cada 3 segundos
   setInterval(obtenerProductosAleatorios, 3000); // 30000 milisegundos = 30 segundos
   
